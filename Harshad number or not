@@ -1,0 +1,33 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.Scanner;
+public class sasi
+{
+public static void main(String args[])
+    {
+        Scanner s = new Scanner(System.in);
+         
+        System.out.print("Input a number : ");
+        int num = s.nextInt();
+        int x = num, y, sum = 0;
+         
+       while(x>0)
+        {
+            y = x%10;
+            sum = sum + y;
+            x = x/10;
+        }
+         
+        if(num%sum == 0)
+System.out.println(num+" is a Harshad Number.");
+        else
+System.out.println(num+" is not a Harshad Number.");      
+    }
+}
+......................................
+Output:
+
+Input a number : >>>156
+156 is a Harshad Number.
+
+Input a number : >>>145
+145 is not a Harshad Number.
