@@ -1,0 +1,27 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+ class sasi
+{
+ public static void main(String args[])
+ {
+ int i,j;
+ int n=5,k=1;
+  System.out.println("Triangle using alphabets");
+     for(i=1;i<=n;i++)
+     {
+        for(j=1;j<=i;j++,k++)
+         {
+             System.out.printf("%4c",(char)(k+64));
+         }
+        System.out.println("");
+     }
+ }
+}
+........................................
+ Output:
+Triangle using alphabets
+   A
+   B   C
+   D   E   F
+   G   H   I   J
+   K   L   M   N   O
