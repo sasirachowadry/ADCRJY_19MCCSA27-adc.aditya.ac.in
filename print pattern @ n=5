@@ -1,0 +1,40 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+public class sasi
+{  
+public static void main(String args[])  
+{  
+int i, j, r;  
+Scanner s = new Scanner(System.in);  
+System.out.print("Enter the number of rows you want to print: ");  
+r = s.nextInt();          
+for (i= 0; i<= r-1; i++)  
+{  
+for (j=0; j<=i; j++)   
+{  
+System.out.print("*"+ " ");  
+}   
+System.out.println("");   
+}   
+for (i=r-1; i>=0; i--)  
+{  
+for(j=0; j <= i-1;j++)  
+{  
+System.out.print("*"+ " ");  
+}  
+System.out.println("");  
+}  
+}
+}
+.......................................
+ Output:
+Enter the number of rows you want to print: >>>5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
