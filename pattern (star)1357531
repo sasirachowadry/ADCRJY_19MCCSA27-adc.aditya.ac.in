@@ -1,0 +1,44 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int i, j;
+        int n = sc.nextInt();
+        for(i = 0; i < n; i++)
+        {
+            for(j = 0; j < (2 * n); j++)
+            {
+                if(i + j <= n - 1) 
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+                if((i + n) <= j) 
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+       
+    }
+}
+...........................................
+Output:
+enter a value:4
+
+*
+
+* * *
+
+* * * * *
+
+* * * * * * *
+
+* * * * *
+
+* * *
+
+*
