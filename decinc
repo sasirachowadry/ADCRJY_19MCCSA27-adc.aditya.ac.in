@@ -1,0 +1,23 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+	public static void main (String[] args) 
+	{
+      Scanner sc = new Scanner(System.in);
+     int n = sc.nextInt();
+      if(n%4 == 0)
+      {
+          System.out.println(++n);
+      }
+      else
+      {
+          System.out.println(--n);
+      }
+	}
+}
+.............................
+Output:
+enter a value: 5
+
+4
