@@ -1,0 +1,39 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{  
+public static void main(String args[])
+{  
+Scanner sc= new Scanner(System.in);
+    System.out.println("enter size of array");
+    int n= sc.nextInt();
+    int a[]=new int[n];
+    //Reading
+ System.out.println("enter values into array");   
+for(int i=0;i<n;i++)
+    a[i]= sc.nextInt();
+    //Writing
+  int largest,secondlargest,i;
+    largest=secondlargest=0;
+    for(i=1;i<n;i++)
+    {
+        if(largest<a[i])
+        {
+            secondlargest=largest;
+        largest=a[i];
+    }
+        if(secondlargest<a[i] && a[i]<largest)
+        {
+          secondlargest= a[i];
+        }
+    }
+ System.out.print("secondlargest value is "+secondlargest);
+}
+}
+.............................................
+Output
+enter size of array
+>>>4
+enter values into array
+>>>1 5 7 9 
+secondlargest value is 7
