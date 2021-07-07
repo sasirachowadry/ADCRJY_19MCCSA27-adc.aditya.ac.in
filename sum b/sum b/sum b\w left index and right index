@@ -1,0 +1,28 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+public class sasi
+{
+    static int findElement(int arr[], int n)
+    {
+        int[] prefixSum = new int[n];
+        prefixSum[0] = arr[0];
+        for (int i = 1; i < n; i++)
+            prefixSum[i] = prefixSum[i - 1] + arr[i];
+        int[] suffixSum = new int[n];
+        suffixSum[n - 1] = arr[n - 1];
+        for (int i = n - 2; i >= 0; i--)
+            suffixSum[i] = suffixSum[i + 1] + arr[i];
+        for (int i = 1; i < n - 1; i++)
+            if (prefixSum[i] == suffixSum[i])
+                return arr[i];
+       return -1;
+    }
+       public static void main(String args[])
+    {
+        int arr[] = { 3,10,10,3,4,5,4,10 };
+        int n = arr.length;
+        System.out.println(findElement(arr, n));
+    }
+}
+.................................
+output:
+17
