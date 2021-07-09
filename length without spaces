@@ -1,0 +1,18 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+public class sasi
+{
+   public static void main(String[] args) 
+   {
+	String str = "I   am   sasira";
+	System.out.println("Length of the String: "+str.length());
+		
+	//length of the String without white spaces
+	System.out.println("Length of String without spaces: "+
+	str.replace(" ", "").length());
+   }
+}
+......................................
+Output:
+Length of the String: 15
+Length of String without spaces: 9
