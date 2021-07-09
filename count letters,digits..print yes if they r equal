@@ -1,0 +1,30 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.regex.*;
+class sasi
+{
+	public static void
+	isAllPresent(String str)
+	{
+		String regex = "^(?=.*[a-z])(?=."
+					+ "*[A-Z])(?=.*\\d)"
+					+ "(?=.*[-+_!@#$%^&*., ?]).+$";
+		Pattern p = Pattern.compile(regex);
+		if (str == null) {
+			System.out.println("No");
+			return;
+		}
+		Matcher m = p.matcher(str);
+		if (m.matches())
+			System.out.println("Yes");
+		else
+			System.out.println("No");
+	}
+	public static void main(String args[])
+	{
+		String str = "#GeeksForGeeks123@";
+		isAllPresent(str);
+	}
+}
+................................................
+output:
+yes
