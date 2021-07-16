@@ -1,0 +1,23 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer> x1=new ArrayList<Integer>();
+    x1.add(10);
+    x1.add(20);
+    x1.add(30);
+    x1.add(40);
+    x1.add(50);
+    x1.set(1,99);
+     System.out.println("list is"+x1);
+      System.out.println(x1.contains(99));
+}
+}
+.............................................
+Output:
+list is[10, 99, 30, 40, 50]
+true
