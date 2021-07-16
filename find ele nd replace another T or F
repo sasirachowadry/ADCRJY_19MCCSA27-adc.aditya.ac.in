@@ -1,0 +1,32 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer> x1=new ArrayList<Integer>();
+    x1.add(10);
+    x1.add(20);
+    x1.add(30);
+    x1.add(40);
+    x1.add(50);
+System.out.println("list is"+x1);
+System.out.println("Enter value to Search");
+int key=sc.nextInt(); //search value
+if(x1.contains(key))
+System.out.println("Element Found");
+else
+System.out.println("Element Not Found");
+ x1.set(1,99);
+System.out.println("list is"+x1);
+    }
+}
+......................................
+Output:
+list is[10, 20, 30, 40, 50]
+Enter value to Search
+>>>20
+Element Found
+list is[10, 99, 30, 40, 50]
