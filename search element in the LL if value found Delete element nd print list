@@ -1,0 +1,38 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.LinkedList;
+class sasi 
+{
+	public static void main(String[] args)
+	{
+		LinkedList<Integer> a = new LinkedList<>();
+		a.add(10);
+		a.add(20);
+		a.add(30);
+		a.add(40);
+		a.add(50);
+		int element = 30;
+		int ans = -1;
+		for (int i = 0; i < a.size(); i++) 
+        {
+			int aElement = a.get(i);
+			if (aElement == element) {
+				ans = i;
+				break;
+			}
+		}
+		if (ans == -1) 
+        {
+			System.out.println("Element not found");
+		}
+		else 
+        {
+            System.out.println("Element found in Linked List at " +ans);	
+        }
+         a.remove(2);
+          System.out.println(a);
+	}
+}
+............................................
+Output:
+Element found in Linked List at 2
+[10, 20, 40, 50]
