@@ -1,0 +1,47 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+   Scanner sc=new Scanner(System.in);
+   LinkedList<Integer> x=new LinkedList<Integer>();
+   int n;
+   System.out.println(Enter your choice: "1.BeginInsert/n 2.EndInsert/n 3.positionInsert/n 4.Besing delete/n 5.End delete 6.position Delete 7.Display 8.Exit");
+   int ch=sc.nextInt();
+   switch(ch)  
+   {
+     case 1:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.beginInsert(n);
+            break;
+     case 2:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.EndInsert(n);
+            break; 
+
+     case 3:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.positionInsert(n);
+            break; 
+     case 4:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.Besing delete(n);
+            break;     
+     case 5:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.EndDelete(n);
+            break;         
+     case 6:System.outprintln("Enter n value");
+            n=Sc.nextInt();
+            x.positionDelete(n);
+            break;              
+     case 7:System.outprintln(x);
+     }
+    }
+   }  
+   ..............................
+   Enter your choice : 7
+10-->20
