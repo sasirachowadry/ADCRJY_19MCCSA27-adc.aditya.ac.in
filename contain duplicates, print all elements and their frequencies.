@@ -1,0 +1,22 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+ class sasi
+ {
+   public static void main(String args[])
+   { 
+    HashMap<Integer,Integer>x=new HashMap<Integer,Integer>();
+    int[] arr={2,4,4,5,5,7,7,7};
+    for(int i=0;i<arr.length;i++)
+    {
+      if(x.containsKey(arr[i]))
+
+      x.put(arr[i],x.get(arr[i])+1);
+      else 
+      x.put(arr[i],1);
+    }
+    System.out.println(x);
+    }
+    }
+    .................................
+Output:
+{4=2, 5=2, 7=3}
