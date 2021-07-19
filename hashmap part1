@@ -1,0 +1,22 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+class sasi
+{
+    static int map(int n, String keys[], int arr[], String s)
+    {
+        HashMap<String,Integer> x=new HashMap<String,Integer>();
+        for(int i=0;i<n;i++);
+        x.put(keys[i],arr[i]);
+        {
+        if(x.containsKey(s));
+        return x.get(s);
+        else
+        return -1;
+    }
+    }
+}
+..............................
+enter n value 3
+keys = {sak, varun, vijay}
+arr = {5, 7, 3}
+s = sak
+Output: 5
