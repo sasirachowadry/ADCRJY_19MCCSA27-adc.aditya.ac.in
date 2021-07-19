@@ -1,0 +1,32 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+public static void main(String args[])
+{
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+Scanner sc= new Scanner(System.in);
+    int n;
+    int key;
+     String values;
+    System.out.println("Enter n value");
+    n= sc.nextInt();
+    for(int i=0;i<0;i++)
+    {
+        key =  sc.nextInt();
+        values = sc.nextLine();
+        x.put(key,values);
+    }
+  System.out.println(x);
+    }
+   TreeMap<Integer,String> t=new TreeMap<Integer,String>( );
+   System.out.println(x);
+}
+.........................................
+Input: 5 John
+1 Sam
+7 kim
+Output:
+1 Sam
+5 John
+7 kim
