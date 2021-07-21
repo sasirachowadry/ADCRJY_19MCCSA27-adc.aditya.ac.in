@@ -1,0 +1,27 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+   ArrayList<Integer>M=new ArrayList<Integer>();
+   M.add(10);
+   M.add(20);
+   M.add(8);
+   M.add(7);
+   M.add(25);
+   M.add(55);
+   Iterator<Integer>z=M.iterator();
+   while(z.hasNext())
+   {
+    if(z.next()<20)
+    z.remove();
+    }
+    System.out.println(M);
+    }
+ }
+Output:
+[20, 25, 55]
