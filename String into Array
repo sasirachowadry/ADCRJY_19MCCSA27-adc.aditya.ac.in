@@ -1,0 +1,32 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   {
+  HashMap<String,Integer> G=new HashMap<String,Integer>();
+  String[] strarr = {"gita","ajay","rama","arya","gita","ajay","arya","ajay","arya","ajay","gita","rama"};
+  for(int i=0;i<strarr.length;i++)
+  {
+   String Key;
+   Key=strarr[i];
+    if(G.containsKey(Key))
+    G.put(Key,G.get(Key)+1);
+    else
+    G.put(Key,1);
+  }
+  for(Map.Entry<String,Integer>i:G.entrySet())
+  {
+    if(i.getValue()>2)
+    System.out.println(i.getKey()+" "+i.getValue());
+
+  }
+ }
+} 
+Ouput:
+arya 3
+ajay 4
+gita 3
