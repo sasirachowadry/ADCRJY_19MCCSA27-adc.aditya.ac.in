@@ -1,0 +1,21 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.io.*;
+import java.util.*;
+class sasi
+{
+	public static void main(String args[])
+	{
+		Hashtable<Integer, String> ht1 = new Hashtable<>();
+		Hashtable<Integer, String> ht2
+			= new Hashtable<Integer, String>();
+		ht1.put(101, "50000");
+		ht1.put(102, "45000");
+		ht1.put(103, "35000");
+        ht1.put(104, "40000");
+		ht1.put(105, "45000");	
+		System.out.println("Mappings of ht1 : " + ht1);
+		
+	}
+}
+...................................
+Output: [101=50000,102=45000,103=35000,104=40000,105=45000]
