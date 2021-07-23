@@ -1,0 +1,22 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+public static void main(String args[])
+{
+String s="ADITYA";
+char ch[]=s.toCharArray();
+Stack s1 = new Stack();
+for(int i=0;i<ch.length;i++){
+s1.push(ch[i]);
+}
+for(int i=0;i<ch.length;i++)
+{
+System.out.print(s1.pop());
+}
+}
+}
+......................................
+Output: 
+
+AYTIDA
