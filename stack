@@ -1,0 +1,31 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.util.*;
+class sasi
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner (System.in);
+        int n;
+        Stack<Integer> x=new Stack<Integer>();
+         System.out.println("Enter n value");
+        n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        x.push =(sc.nextInt());
+        for(Integer i:x)
+        {
+          System.out.println(x);
+            System.out.print(Collections.max());
+               System.out.print(Collections.min());
+             System.out.println(x);
+    }
+    }
+}
+........................................
+Enter n value: 5
+10
+20
+5
+40
+7
+Maximum value: 40
+Minimum value:5
