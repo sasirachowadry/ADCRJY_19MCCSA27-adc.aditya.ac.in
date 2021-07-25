@@ -1,0 +1,34 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    // Write your code here.
+    LinkedList queue;
+    Stack stack;
+    
+    public Solution() {
+        queue = new LinkedList();
+        stack = new Stack();
+    }
+    
+    public void pushCharacter(char ch) {
+        stack.push(ch);
+    }
+    
+    public void enqueueCharacter(char ch) {
+        queue.addLast(ch);
+    }
+    
+    public char popCharacter() {
+        return (char) stack.pop();
+    }
+    
+    public char dequeueCharacter() {
+        return (char) queue.remove(0);
+    }
+..................................................
+Input (stdin)
+racecar
+Your Output (stdout)
+The word, racecar, is a palindrome.
