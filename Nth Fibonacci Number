@@ -1,0 +1,18 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+class Solution {
+    static long nthFibonacci(long n){
+        // code here
+        int num = (int)n;
+         long prefix[]= new long[num+1];
+         prefix[0]=0;
+         prefix[1]=0;
+         for(int i=2;i<num+1;i++)
+         {
+             prefix[i]=(prefix[i-1]+prefix[i-2])%1000000007;
+         }
+         return prefix[num];
+    }
+}
+...................................................
+Input: n = 2
+Output: 1
