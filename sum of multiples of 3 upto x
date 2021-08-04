@@ -1,0 +1,21 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+class sasi
+{
+static int calculate_sum(int a, int N) 
+{
+	int m = N / a;
+	int sum = m * (m + 1) / 2;
+	int ans = a * sum;
+	return ans;
+}
+public static void main(String[] args)
+{
+	int a = 3, N = 20;
+	System.out.println("Sum of multiples of " + a +
+					" up to " + N + " = " +
+							calculate_sum(a, N));
+}
+}
+...........................................................
+Output
+Sum of multiples of 3 up to 20 = 63
