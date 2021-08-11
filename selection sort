@@ -1,0 +1,25 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+class selectionsort
+{
+public static void main(String args[])
+{
+int ar[]={50,40,30,20,10,5};
+int n=ar.length;
+int i,j,temp,min;
+for(i=0;i<n;i++)
+{
+  min=i;
+for(j=i+1;j<n;j++)
+{
+if(ar[min]>ar[j])
+    min=j;
+}
+}
+}
+System.out.print("After sorting :");
+for(i=0;i<n;i++)
+System.out.print(ar[i]+ " ");
+}
+......................................
+output:
+5 10 20 30 40 50 
