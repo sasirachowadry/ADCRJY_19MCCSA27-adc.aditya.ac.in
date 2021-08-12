@@ -1,0 +1,21 @@
+# ADCRJY_19MCCSA27-adc.aditya.ac.in
+class Solution 
+{
+    public int fib(int n)
+    {
+        if(N == 0) return 0;
+        int[] table = new int[N + 1];
+        table[1] = 1;
+        
+        for(int i = 2; i < table.length; i++)
+        {
+            table[i] = table[i - 1] + table[i - 2];
+        }
+        
+        return table[N];
+    }
+}
+.......................................
+Input: n = 2
+Output: 1
+
